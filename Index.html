@@ -1,26 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Gubbu 🐼💜</title>
+    <title>For My Dearest Gubbu 🐼💜</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <div id="ambient-container"></div>
 
     <section id="password-screen" class="screen active">
-        <div class="glass-card text-center lock-box animate-pop">
-            <div class="panda-icon">🐼</div>
+        <div class="glass-card text-center drop-in">
             <h2>Only Babde can enter ❤️</h2>
             <div class="input-group">
-                <input type="password" id="password-input" placeholder="Enter our special date (DDMMYY)" maxlength="6">
-                <button id="password-btn">Unlock My Heart ✨</button>
+                <input type="password" id="password-input" placeholder="Enter our special date (DDMMYY)..." autofocus>
+                <button id="password-btn" class="glow-btn"><i class="fas fa-heart"></i> Enter</button>
             </div>
             <p id="password-error" class="error-msg"></p>
         </div>
@@ -28,143 +24,179 @@
 
     <section id="intro-screen" class="screen">
         <div class="intro-container text-center">
-            <h1 id="intro-heading" class="gradient-text">Hey Gubbu...</h1>
-            <div id="intro-text-box" class="intro-text"></div>
-            <button id="intro-next-btn" class="hidden">Enter Our World 💜</button>
+            <h1 id="intro-greeting" class="fade-in-out">Hey Gubbu...</h1>
+            <p id="intro-text" class="fade-in-out"></p>
+            <button id="skip-intro-btn" class="glow-btn hidden">Enter Our World ✨</button>
         </div>
     </section>
 
     <main id="main-content" class="hidden">
         
         <nav class="navbar">
-            <div class="nav-logo">🐼 Gubbu's Space</div>
-            <div class="nav-links">
-                <a href="#hero">Home</a>
-                <a href="#timeline">Memories</a>
-                <a href="#interactive">Fun</a>
-                <a href="#reasons">100 Reasons</a>
-            </div>
+            <div class="nav-logo">Gubbu 💜 Panda</div>
+            <ul class="nav-links">
+                <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#timeline"><i class="fas fa-heartbeat"></i> Us</a></li>
+                <li><a href="#flip-cards"><i class="fas fa-sparkles"></i> Reasons</a></li>
+                <li><a href="#open-when"><i class="fas fa-envelope-open-text"></i> Comfort</a></li>
+                <li><a href="#interactive-actions"><i class="fas fa-kiss-wink-heart"></i> Love</a></li>
+                <li><a href="#reasons-100"><i class="fas fa-list-ol"></i> 100 Reasons</a></li>
+            </ul>
         </nav>
 
-        <section id="hero" class="hero-section">
-            <div class="glass-card hero-card text-center">
-                <div class="panda-container">
-                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW9pZ3A1MndwZ3Z0MXN0ZWh5Nm5pZ296b3VwZXN5b3p0Z3Z3bzh6dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/v6wHpXmC6vG7pPl94F/giphy.gif" alt="Cute Panda" class="panda-gif">
-                </div>
-                <h1 class="main-title">To My Dearest Gubbu 🐼💜</h1>
-                <p class="subtitle">Made with all my love, only for you ❤️</p>
-                
-                <div class="counter-box">
-                    <h3>We have been together for...</h3>
-                    <div class="countdown-grid">
-                        <div class="time-block"><span id="count-days">00</span><label>Days</label></div>
-                        <div class="time-block"><span id="count-hours">00</span><label>Hours</label></div>
-                        <div class="time-block"><span id="count-minutes">00</span><label>Minutes</label></div>
-                        <div class="time-block"><span id="count-seconds">00</span><label>Seconds</label></div>
+        <section id="hero" class="section hero-section">
+            <div class="glass-card text-center hero-card fade-up">
+                <div class="panda-animation-container">
+                    <div class="panda">
+                        <div class="ear left"></div>
+                        <div class="ear right"></div>
+                        <div class="face">
+                            <div class="eye left"><div class="pupil"></div></div>
+                            <div class="eye right"><div class="pupil"></div></div>
+                            <div class="nose"></div>
+                            <div class="blush left"></div>
+                            <div class="blush right"></div>
+                        </div>
+                        <div class="body">
+                            <div class="hand left"></div>
+                            <div class="hand right">💜</div>
+                        </div>
                     </div>
+                </div>
+                <h1>To My Dearest Gubbu 🐼💜</h1>
+                <h3>Made with all my love, only for you ❤️</h3>
+                <p class="hero-p">I called you Gubbu because my infinite love turned you into the cutest, fluffiest panda in the whole universe. This is our little safe space.</p>
+            </div>
+        </section>
+
+        <section id="counter-section" class="section">
+            <div class="glass-card text-center fade-up">
+                <h2>We have been together for...</h2>
+                <p class="counter-subtitle">Since October 2, 2024 ✨</p>
+                <div class="counter-container">
+                    <div class="counter-box"><span id="days">00</span><p>Days</p></div>
+                    <div class="counter-box"><span id="hours">00</span><p>Hours</p></div>
+                    <div class="counter-box"><span id="minutes">00</span><p>Minutes</p></div>
+                    <div class="counter-box"><span id="seconds">00</span><p>Seconds</p></div>
                 </div>
             </div>
         </section>
 
-        <section id="timeline" class="section-padding">
-            <h2 class="section-title">Our Beautiful Journey 🌸</h2>
+        <section id="daily-reminder" class="section">
+            <div class="glass-card text-center fade-up highlight-card">
+                <h2><i class="fas fa-calendar-day"></i> Your Daily Reminder</h2>
+                <div class="reminder-box">
+                    <p id="current-date-str" class="date-tag"></p>
+                    <blockquote id="daily-reminder-text">"Loading your sweet reminder..."</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section">
+            <h2 class="section-title text-center">Our Beautiful Journey 💜</h2>
             <div class="timeline-container">
-                <div class="timeline-line"></div>
-                
-                <div class="timeline-item left">
+                <div class="timeline-item left-item fade-up">
                     <div class="timeline-content glass-card">
-                        <span class="date">02 October 2024</span>
-                        <h3>The Day We Met</h3>
-                        <p>The universe decided to bless me, and my life changed forever. The start of us. 💖</p>
+                        <div class="timeline-date">02 October 2024</div>
+                        <h3>The Day We Met 💖</h3>
+                        <p>The universe aligned, and my life changed completely. The day my beautiful Shona stepped into my world.</p>
                     </div>
                 </div>
-
-                <div class="timeline-item right">
+                <div class="timeline-item right-item fade-up">
                     <div class="timeline-content glass-card">
-                        <span class="date">09 November 2025</span>
-                        <h3>Our First Hug</h3>
-                        <p>Holding you in my arms felt like finding exactly where I belong in this giant world. 🫂</p>
+                        <div class="timeline-date">09 November 2025</div>
+                        <h3>Our First Hug 🫂</h3>
+                        <p>Holding you in my arms felt like finally coming home. All the noise in the world just quieted down.</p>
                     </div>
                 </div>
-
-                <div class="timeline-item left">
+                <div class="timeline-item left-item fade-up">
                     <div class="timeline-content glass-card">
-                        <span class="date">14 December 2025</span>
-                        <h3>First Kiss</h3>
-                        <p>Time completely stopped. Pure magic, butterflies, and a memory locked in my heart forever. 💏</p>
+                        <div class="timeline-date">14 December 2025</div>
+                        <h3>First Kiss 💋</h3>
+                        <p>Magic, fireworks, and pure bliss. A moment forever etched into my soul.</p>
                     </div>
                 </div>
-
-                <div class="timeline-item right">
+                <div class="timeline-item right-item fade-up">
                     <div class="timeline-content glass-card">
-                        <span class="date">10 June 🫣</span>
-                        <h3>Favorite Memory</h3>
-                        <p>No words needed here. Best day ever, completely unforgettable. iykyk! 😏❤️</p>
+                        <div class="timeline-date">10 June 🫣</div>
+                        <h3>Favorite Memory 💕</h3>
+                        <p>No words needed here... iykyk! A sweet secret shared just between us two.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="flip-cards-section" class="section-padding">
-            <h2 class="section-title">Flip For My Heart 💜</h2>
+        <section id="flip-cards" class="section">
+            <h2 class="section-title text-center">Flip For My Heart 🌸</h2>
             <div class="cards-grid">
-                <div class="flip-card">
+                <div class="flip-card fade-up">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
+                            <i class="fas fa-heart card-icon"></i>
                             <h3>Things I Love About You ❤️</h3>
-                            <p class="click-hint">Click to flip</p>
+                            <span class="flip-hint">Tap to flip ✨</span>
                         </div>
                         <div class="flip-card-back glass-card">
+                            <h3>I Love Everything...</h3>
                             <ul>
-                                <li>The way your eyes light up completely when you are genuinely happy.</li>
-                                <li>How effortlessly you became my safest and absolute favorite space.</li>
-                                <li>Your beautiful soul that naturally makes me want to be a better person.</li>
+                                <li>The sound of your laugh when you're genuinely happy.</li>
+                                <li>How cute you look when you get sleepy or pouty.</li>
+                                <li>The infinite depth of your warmth and gorgeous soul.</li>
+                                <li>Your beautiful, pure heart that cares so deeply.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card fade-up">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
+                            <i class="fas fa-feather-alt card-icon"></i>
                             <h3>Why You Are Special 🌸</h3>
-                            <p class="click-hint">Click to flip</p>
+                            <span class="flip-hint">Tap to flip ✨</span>
                         </div>
                         <div class="flip-card-back glass-card">
+                            <h3>My Sanctuary...</h3>
                             <ul>
-                                <li>You are completely irreplaceable; nobody else could ever understand me like you.</li>
-                                <li>You can turn my darkest, heaviest days into sunshine with just one word.</li>
-                                <li>Your presence is absolute comfort; you are my perfect home.</li>
+                                <li>You make the worst days feel manageable just by existing.</li>
+                                <li>Your presence is my ultimate comfort and safety.</li>
+                                <li>You understand me completely, even in silence.</li>
+                                <li>You are completely irreplaceable to me, Babde.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card fade-up">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
+                            <i class="fas fa-wand-magic-sparkles card-icon"></i>
                             <h3>Your Secret Superpowers ✨</h3>
-                            <p class="click-hint">Click to flip</p>
+                            <span class="flip-hint">Tap to flip ✨</span>
                         </div>
                         <div class="flip-card-back glass-card">
+                            <h3>Your Magic...</h3>
                             <ul>
-                                <li><strong>Kindness:</strong> Healing the world softly.</li>
-                                <li><strong>Patience:</strong> Dealing with all my dramatic, chaotic energy.</li>
-                                <li><strong>Smile:</strong> Instantly curing all my daily stress.</li>
-                                <li><strong>Caring Nature:</strong> Making me feel like the luckiest boy alive.</li>
+                                <li><strong>Kindness:</strong> Healing everyone around you.</li>
+                                <li><strong>Patience:</strong> Dealing with my chaotic self.</li>
+                                <li><strong>Smile:</strong> Instantly lighting up my darkest days.</li>
+                                <li><strong>Caring Nature:</strong> Making me feel so loved.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card fade-up">
                     <div class="flip-card-inner">
                         <div class="flip-card-front glass-card">
+                            <i class="fas fa-handshake card-icon"></i>
                             <h3>What I Promise You 💜</h3>
-                            <p class="click-hint">Click to flip</p>
+                            <span class="flip-hint">Tap to flip ✨</span>
                         </div>
                         <div class="flip-card-back glass-card">
+                            <h3>My Vows To You...</h3>
                             <ul>
-                                <li>Unwavering support through every storm life throws your way.</li>
-                                <li>To always actively listen, even to your quietest, unspoken thoughts.</li>
-                                <li>To always be standing right beside you, holding your hand forever.</li>
+                                <li>To support you endlessly through every single storm.</li>
+                                <li>To listen intently whenever you need to vent or cry.</li>
+                                <li>To always be right here, holding your hand tight.</li>
+                                <li>To love you harder on the days you find it tough.</li>
                             </ul>
                         </div>
                     </div>
@@ -172,104 +204,135 @@
             </div>
         </section>
 
-        <section id="interactive" class="section-padding">
-            <h2 class="section-title">Your Little Comfort World 🧸</h2>
-            
-            <div class="interactive-grid">
-                <div class="glass-card block-item">
-                    <h3>Daily Reminder 📅</h3>
-                    <p id="daily-reminder-text" class="dynamic-text">Loading your comfort note for today...</p>
-                </div>
-
-                <div class="glass-card block-item text-center">
-                    <h3>Love Note Jar 💌</h3>
-                    <div class="jar-container">
-                        <div class="jar-graphic">🍯</div>
-                    </div>
-                    <button id="jar-btn" class="glow-btn">Pick a random note 💌</button>
-                    <p id="jar-note" class="dynamic-text hidden"></p>
-                </div>
-
-                <div class="glass-card block-item text-center">
-                    <h3>How are you feeling, Babde?</h3>
-                    <div class="mood-buttons">
-                        <button class="mood-btn" data-mood="smile">😊 Make me smile</button>
-                        <button class="mood-btn" data-mood="comfort">🫂 Comfort me</button>
-                        <button class="mood-btn" data-mood="laugh">😂 Make me laugh</button>
-                        <button class="mood-btn" data-mood="love">💖 Remind me I'm loved</button>
-                    </div>
-                    <p id="mood-response" class="dynamic-text hidden"></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="open-when" class="section-padding">
-            <h2 class="section-title">Open When... ✉️</h2>
+        <section id="open-when" class="section">
+            <h2 class="section-title text-center">Open When You Need Me ✉️</h2>
             <div class="open-when-grid">
-                <div class="envelope glass-card" data-topic="sad">Open when you feel sad</div>
-                <div class="envelope glass-card" data-topic="alone">Open when you feel alone</div>
-                <div class="envelope glass-card" data-topic="not-enough">Open when you think you aren't enough</div>
-                <div class="envelope glass-card" data-topic="miss-me">Open when you miss me</div>
-                <div class="envelope glass-card" data-topic="smile">Open when you need a smile</div>
+                <div class="envelope glass-card fade-up" onclick="openEnvelope('sad')">
+                    <i class="fas fa-cloud-showers-heavy env-icon"></i>
+                    <h3>...you feel sad</h3>
+                </div>
+                <div class="envelope glass-card fade-up" onclick="openEnvelope('alone')">
+                    <i class="fas fa-user-friends env-icon"></i>
+                    <h3>...you feel alone</h3>
+                </div>
+                <div class="envelope glass-card fade-up" onclick="openEnvelope('not-enough')">
+                    <i class="fas fa-heart-broken env-icon"></i>
+                    <h3>...you think you aren't enough</h3>
+                </div>
+                <div class="envelope glass-card fade-up" onclick="openEnvelope('miss-me')">
+                    <i class="fas fa-paper-plane env-icon"></i>
+                    <h3>...you miss me</h3>
+                </div>
+                <div class="envelope glass-card fade-up" onclick="openEnvelope('smile')">
+                    <i class="fas fa-laugh-beam env-icon"></i>
+                    <h3>...you need a smile</h3>
+                </div>
+            </div>
+
+            <div id="envelope-modal" class="modal hidden">
+                <div class="glass-card modal-content text-center">
+                    <span class="close-modal" onclick="closeEnvelope()">&times;</span>
+                    <i id="modal-icon" class="fas fa-envelope-open-text modal-main-icon"></i>
+                    <div id="modal-text" class="modal-body"></div>
+                </div>
             </div>
         </section>
 
-        <section id="actions" class="section-padding text-center">
-            <h2 class="section-title">Virtual Affection Station 💋</h2>
-            <div class="action-buttons-container">
-                <button id="hug-btn" class="action-btn-main">🫂 Send Me A Hug</button>
-                <button id="kiss-menu-btn" class="action-btn-main">Give me a kiss 😚</button>
-            </div>
+        <section id="interactive-actions" class="section">
+            <div class="interactive-grid">
+                <div class="glass-card text-center fade-up action-card">
+                    <h2>Need Warmth? 🫂</h2>
+                    <p>Virtual embraces are real when they come straight from my soul.</p>
+                    <button id="hug-btn" class="glow-btn huge-btn">🫂 Send Me A Hug</button>
+                </div>
 
-            <div id="kiss-options" class="hidden animate-pop">
-                <div class="glass-card sub-card">
-                    <h4>Choose your type of kiss:</h4>
-                    <div class="kiss-btn-group">
-                        <button class="kiss-type-btn" data-kiss="normal">Normal kiss 😚</button>
-                        <button class="kiss-type-btn" data-kiss="lip">Lip kiss 💏</button>
+                <div class="glass-card text-center fade-up action-card">
+                    <h2>Need Sweetness? 😚</h2>
+                    <p>Pick your favorite type of virtual affection right now!</p>
+                    <button id="kiss-menu-btn" class="glow-btn huge-btn">Give me a kiss 😚</button>
+                    
+                    <div id="kiss-options" class="kiss-options-container hidden">
+                        <button id="normal-kiss-btn" class="glow-btn small-btn">Normal kiss 😚</button>
+                        <button id="lip-kiss-btn" class="glow-btn small-btn">Lip kiss 💏</button>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="promise-wall" class="section-padding">
-            <h2 class="section-title">My Promise Wall 🤝</h2>
-            <div class="promises-grid">
-                <div class="promise-card glass-card"><h4>I promise to listen.</h4><p>No matter how long, how messy, or what time it is, I am always here to listen to your voice.</p></div>
-                <div class="promise-card glass-card"><h4>I promise to support you.</h4><p>Through your career, your growth, your dreams, and your heavy moments—I am your biggest cheerleader.</p></div>
-                <div class="promise-card glass-card"><h4>I promise to remind you how special you are.</h4><p>On days you forget your own magic, I will reflect it back to you until you see it clearly.</p></div>
-                <div class="promise-card glass-card"><h4>I promise to make you smile.</h4><p>I will always be your chaotic, funny partner to ensure you never lose that beautiful laugh.</p></div>
+            <div id="animation-overlay" class="animation-overlay hidden">
+                <div id="overlay-message" class="overlay-message"></div>
+                <div id="overlay-visuals"></div>
             </div>
         </section>
 
-        <section id="reasons" class="section-padding">
-            <h2 class="section-title">100 Reasons Why You Are Amazing ♾️</h2>
-            <p class="text-center sub-info">A small list of the endless things that make you uniquely you.</p>
-            <div id="reasons-container" class="reasons-scroll-box">
+        <section id="jar-mood-section" class="section interactive-grid">
+            <div class="glass-card text-center fade-up">
+                <h2>Love Note Jar 💌</h2>
+                <p>Reach in and grab a little token of my adoration whenever you like.</p>
+                <div class="jar-container">
+                    <div class="jar">
+                        <div class="jar-lid"></div>
+                        <div class="jar-body">
+                            <div class="jar-heart">❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="jar-btn" class="glow-btn"><i class="fas fa-envelope"></i> Pick a random note 💌</button>
+                <div id="jar-note-display" class="note-popup hidden"></div>
+            </div>
+
+            <div class="glass-card text-center fade-up">
+                <h2>Mood Booster 🚀</h2>
+                <p>Tell me exactly what your heart requires at this very second.</p>
+                <div class="mood-buttons">
+                    <button class="mood-btn" onclick="triggerMood('smile')">😊 Make me smile</button>
+                    <button class="mood-btn" onclick="triggerMood('comfort')">🫂 Comfort me</button>
+                    <button class="mood-btn" onclick="triggerMood('laugh')">😂 Make me laugh</button>
+                    <button class="mood-btn" onclick="triggerMood('love')">💖 Remind me I'm loved</button>
+                </div>
+                <div id="mood-display" class="note-popup hidden"></div>
+            </div>
+        </section>
+
+        <section id="reasons-100" class="section">
+            <h2 class="section-title text-center">100 Reasons Why You Are Amazing 📝</h2>
+            <p class="text-center section-desc">Scroll through a tiny portion of the endless reasons why you completely own my heart.</p>
+            <div id="reasons-container" class="reasons-scroll-grid">
                 </div>
         </section>
 
-        <section id="secret-ending" class="section-padding text-center">
-            <div class="glass-card secret-card">
-                <button id="secret-btn" class="glow-btn-large">Click only if you promise to smile ❤️</button>
-                <div id="secret-content" class="hidden animate-pop">
-                    <h2 class="dancing-font text-large">You smiled? Good. That's my favorite thing.</h2>
-                    <p class="final-text">You are my absolute favorite person.</p>
-                    <h3 class="final-love">I love you, Gubbu. Always ❤️</h3>
-                    <div class="panda-love-animation">🐼❤️🐼</div>
+        <section id="promise-wall" class="section">
+            <div class="glass-card fade-up">
+                <h2 class="text-center">My Promise Wall 🤝</h2>
+                <p class="text-center section-desc">These are completely unbreakable, forever bound to my word.</p>
+                <div class="promises-grid">
+                    <div class="promise-item"><i class="fas fa-check-circle"></i> I promise to listen to you, always.</div>
+                    <div class="promise-item"><i class="fas fa-check-circle"></i> I promise to support you through all challenges.</div>
+                    <div class="promise-item"><i class="fas fa-check-circle"></i> I promise to remind you how special you are.</div>
+                    <div class="promise-item"><i class="fas fa-check-circle"></i> I promise to make you smile whenever you're low.</div>
+                    <div class="promise-item"><i class="fas fa-check-circle"></i> I promise to prioritize your mental peace.</div>
+                    <div class="promise-item"><i class="fas fa-check-circle"></i> I promise to cherish every tiny quirk of yours.</div>
                 </div>
             </div>
         </section>
 
-        <footer class="footer">
-            <p>Made with absolute love by your favorite person for Shona ✨</p>
+        <section id="secret-ending" class="section text-center">
+            <div class="glass-card fade-up final-card">
+                <h2>Before You Go... 🗝️</h2>
+                <button id="secret-btn" class="glow-btn huge-btn pulsing">Click only if you promise to smile ❤️</button>
+                <div id="secret-content" class="secret-content hidden">
+                    <p class="secret-txt-1">You smiled? Good. That's my absolute favorite thing in the world.</p>
+                    <p class="secret-txt-2">You are my absolute favorite person, Gubbu.</p>
+                    <h2 class="secret-love">I love you, Gubbu. Always ❤️</h2>
+                    <div class="panda-hug-end">🐼💖🐼</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center">
+            <p>Built with all the love in the universe by your one and only ❤️ | © 2026</p>
         </footer>
 
     </main>
-
-    <div id="overlay-animation-screen" class="hidden">
-        <div id="overlay-content-box"></div>
-    </div>
 
     <script src="script.js"></script>
 </body>
